@@ -1,0 +1,39 @@
+.login{
+    &-area{
+        margin-top: 200px;
+        @include iphone(){
+            margin-top: 0px;
+            margin-bottom: 60px;
+        }
+    }
+
+    img{
+        margin-bottom: 100px;
+        @include iphone(){
+            margin-top: 40px;
+            margin-bottom: 20px;
+        }
+    }
+
+    .register{
+        margin-left: 100px;
+        margin-right: 10px;
+        border-radius: 4px;
+        padding: 8px 16px;
+        color: $primary;
+        background-color:white;
+        border: 1px solid $primary;
+        @include iphone(){
+        margin-left: 80px;
+        margin-right: 10px;
+        }
+    }
+
+    .Login{
+        border-radius: 4px;
+        padding: 8px 16px;
+        color: white;
+        border: 1px solid $primary;
+        background-color: $primary;
+    }
+}

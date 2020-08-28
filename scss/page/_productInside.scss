@@ -1,0 +1,34 @@
+.product{
+    .two-box{
+        margin-top: 40px;
+    }
+
+    .bottom{
+        margin-top: 40px;
+        margin-bottom: 60px;
+    }
+
+    .shoppingCart{
+        border: 2px solid $primary;
+        border-radius: 4px;
+    }
+
+    select{
+        padding-top: 10px;
+        padding-bottom: 10px;
+    }
+    button{
+        background-color:$primary;
+        color: white;
+        border: 1px solid $primary;
+    }
+
+    .heart-box{
+        margin-top: 5px;
+        margin-bottom: 60px;
+    }
+
+    h5{
+        font-weight: bold;
+    }
+}

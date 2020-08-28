@@ -1,0 +1,114 @@
+.navbar{
+    background: white;
+
+    &-brand{
+        display: block;
+        width: 128px;
+        height: 38px;
+        margin-bottom: 10px;
+        margin-left: 30px;
+    }
+
+    &-nav{
+        .nav-link{
+            display: block;
+        }
+
+        .nav-item{
+            padding: 10px;
+            width: 100%;
+            @include iphone {
+                background-color: #707070;
+                margin-top: 1px;
+                text-align: center;
+            }
+            a{
+                display: block;
+            }
+            @include iphone {
+                color: #FFF;
+            }
+            p{
+                margin-left: 10px;
+                padding-top: 20px;
+                padding-bottom: 0px;
+            }
+            img{
+                display: inline-block;
+                @include iphone {
+                    display: none;
+                }
+            }
+        }
+    }
+
+    &-list{
+        display: flex;
+        margin-bottom: 0px;
+        padding-inline-start: 0px;
+
+        li{
+            margin-top: 8px;
+            width: 100%;
+            @include iphone {
+                background-color: #707070;
+                margin-top: 1px;
+                text-align: center;
+            }
+            .link{
+                display: block;
+                color:gray;
+            }
+            @include iphone {
+                color: #FFF;
+            }
+
+            img{
+                display: inline-block;
+                @include iphone {
+                    display: none;
+                }
+            }
+            p{
+                display: inline-block;
+            }
+        }
+    }
+
+
+
+
+
+
+
+
+    &-list-phone{
+        display: flex;
+        padding-inline-start: 0px;
+        margin-bottom: 0px;
+
+        li{
+            margin-top: 8px;
+        }
+
+        .count-shopping{
+            text-align: center;
+            font-size: 5px;
+            border-radius: 50%;
+            background-color: $primary;
+            color: #FFF;
+            width: 15px;
+            height: 15px;
+            position: absolute;
+            left: 25px;
+            top: -3px;
+        }
+
+        .burgerIcon{
+            cursor: pointer;
+        }
+    }
+}
+
+
+

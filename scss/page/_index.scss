@@ -1,0 +1,167 @@
+.banner{
+    background:url('../img/index/banner.png');
+    background-position: center center;
+    width: 100%;
+    height: 870px;
+
+    &-info{
+        color: #FFF;
+        margin-top: 300px;
+        h2{
+            font-size: 32px;
+            font-weight: bold;
+        }
+    
+        p{
+            font-size:20px;
+            height: 144px;
+        }
+    
+        button{
+            width: 250px;
+            height: 60px;
+            color:#FFF;
+            font-size: 30px;
+            background-color:transparent;
+            border:2px solid #FFF;
+            border-radius: 20px;
+            margin-top: 16px;
+        }
+    }
+}
+
+//product
+
+.product-list{
+    .container{
+        margin-top: 60px;
+        margin-bottom: 60px;
+    }
+
+    .goods{
+        @include iphone(){
+            margin-top: 32px;
+        }
+    }
+
+    .col-md-6{
+        padding-right: 0px;
+        padding-left: 0px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .info{
+        max-width: 350px;
+
+        h2{
+            font-size: 32px;
+        }
+
+        p{
+            font-size: 20px;
+        }
+
+        .more{
+            font-size: 16px;
+        }
+    }
+    button{
+        font-size: 20px;
+        border: 2px solid #000;
+        border-radius: 30px;
+        background-color: #fff;
+        padding: 18px 50px;
+    }
+}
+
+
+//darkProduct-list
+
+.darkProduct-list{
+    background-color:#E0E0E0;
+
+    .darkgoods{
+        padding-top: 40px;
+        padding-inline-start: 0px;
+    }
+
+    .product-photo{
+        position: relative;
+    }
+
+    .product-info{
+        font-size: 20px;
+        font-weight: bold;
+        
+        img{
+            width: 100%;
+            position: relative;
+            @include iphone() {
+                width: 350px;
+                height: 350px;
+            }
+        }
+
+        pre{
+            font-weight: lighter;
+        }
+
+        .delete-line{
+            color: #8D8D8D;
+        }
+
+        .price{
+            margin-top: 16px;
+        }
+    }
+
+    .sold-out{
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        opacity: 0.2;
+        background-color: black;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+        p{
+            color: #FFFFFF;
+            font-size: 20px;
+            opacity: 1;
+        }
+    }
+}
+
+//bottle-recycling
+
+.recycling{
+    img{
+        margin-top: 60px;
+        margin-bottom: 60px;
+        @include iphone(){
+            margin-top: 0px;
+            margin-bottom: 0px;
+        }
+    }
+
+    .recycling-info{
+        margin-bottom: 40px;
+    }
+
+    .info{
+        margin-top: 82px;
+        @include iphone(){
+            margin-top: 0px;
+        }
+
+        .subtitle{
+            font-size: 20px;
+        }
+    }
+
+}

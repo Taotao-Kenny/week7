@@ -1,0 +1,42 @@
+.footer{
+    background-color: $primary;
+    margin-top: 0px;
+
+    .row{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding-top: 20px;
+        padding-bottom: 20px;
+    }
+
+    .copyRight{
+        display: flex;
+        align-items: center;
+        
+        a{
+            display: block;
+        }
+
+        p{
+            width: 100%;
+            color: white;
+            margin-left: 10px;
+            margin-bottom: 0px;
+        }
+    }
+
+    ul{
+        display: flex;
+        margin-top: 0px;
+        margin-bottom: 0px;
+        @include pad(){
+            display:none;
+        }
+
+        a{
+            color:white;
+            margin-left: 36px;
+        }
+    }
+}

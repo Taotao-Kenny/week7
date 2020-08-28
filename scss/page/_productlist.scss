@@ -1,0 +1,49 @@
+.menu {
+    background-color: $primary;
+    display: block;
+    margin-bottom: 60px;
+    @include iphone{
+        display: none;
+    }
+    ul {
+        display: flex;
+        margin-top: 15px;
+        margin-bottom: 15px;
+
+        li{
+            margin-left: 35px;
+        }
+
+        a {
+            font-size: 15px;
+            color: #FFF;
+        }
+    }
+}
+
+.productList{
+    li{
+        margin-bottom: 20px;
+    }
+    h2{
+        font-size: 24px;
+    }
+    del{
+        color: #8D8D8D;
+    }
+    .heart{
+        margin-right: 10px;
+    }
+}
+
+.flex-box{
+    justify-content: center;
+    align-items: center;
+    li{
+        margin-left: 20px;
+    }
+    
+    .active{
+        color: black;
+    }
+}

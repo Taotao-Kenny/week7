@@ -1,0 +1,230 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Product</title>
+    <link rel="stylesheet" href="scss/all.css">
+    <link rel="shortcut icon" href="img/favicon.ico">
+</head>
+<body>
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <a class="navbar-brand" href="index.html" data-aos="fade-right">
+            <img src="img/index/d’Perfume.png" alt="logo">
+        </a>
+        <!--????-->
+        <div class="col-5 offset-2 d-block d-md-none">
+            <ul class="navbar-list-phone">
+                <li class="col-6">
+                    <div class="shopping-cart">
+                        <a href="#" class="link">
+                            <img src="img/index/shopping-cart.svg" alt="shopping-cart">
+                            <p class="count-shopping">3</p>
+                        </a>
+                    </div>
+                </li>
+                <li class="col-6">
+                    <div class="burgerIcon">
+                        <img src="img/index/burger.svg" alt="burgerIcon">
+                    </div>
+                </li>
+            </ul>
+        </div>
+
+
+        <div class="collapse navbar-collapse offset-6" data-aos="fade-left">
+          <ul class="navbar-nav">
+            <li class="nav-item">
+              <a class="nav-link d-flex" href="productlist.html">
+                <img src="img/index/tshirt.svg" alt="">
+                <p>Product</p>
+              </a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link d-flex" href="login.html">
+                <img src="img/index/user-alt.svg" alt="">
+                <p>Login</p>
+            </a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link d-flex" href="#">
+                <img src="img/index/heart.svg" alt="">
+                <p>Wishlist</p>
+              </a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link d-flex" href="#">
+                    <img src="img/index/shopping-cart.svg" alt="shopping-cart">
+                    <p>Cart(3)</p>
+                </a>
+            </li>
+          </ul>
+        </div>
+      </nav>
+   
+    <!--menu-->
+
+    <div class="menu" data-aos="zoom-in-down">
+        <div class="container">
+            <div class="row">
+                <ul class="col-md-6">
+                    <li><a href="#">CHANEL</a></li>
+                    <li><a href="#">Jo Malone</a></li>
+                    <li><a href="#">Curology</a></li>
+                    <li><a href="#">Dior</a></li>
+                    <li><a href="#">Chloe</a></li>
+                    <li><a href="#">ZARA</a></li>
+                </ul>
+            </div>
+        </div>
+    </div>
+
+    <!--product-->
+    <div class="product">
+        <div class="container">
+            <div class="row flex-column-reverse flex-md-row">
+                <div class="col-md-8">
+                    <img class="d-none d-md-block"src="img/productInside/product1-1.png" alt="photo"data-aos="fade-right">
+                    <div class="row two-box">
+                        <div class="col-md-6">
+                            <img class="mb-4" src="img/productInside/product2-2.png" alt="photo" data-aos="fade-right">
+                        </div>
+                        <div class="col-md-6">
+                            <img src="img/productInside/product3-2.png" alt="photo" data-aos="fade-right">
+                        </div>
+                    </div>
+                    <img class="bottom" src="img/productInside/product1-1.png" alt="photo" data-aos="fade-right">
+                </div>
+
+                <div class="col-md-4" data-aos="flip-left">
+                    <img class="d-block d-md-none mb-2"src="img/productInside/product1-2.png" alt="photo">
+                    <h3>CHANEL N°5</h3>
+                    <p class="product-info">
+                        N°5，女性魅力的極致精髓。散發柔美澄透的乙醛花束香氣。經典傳奇香氛，蘊藏於極簡設計的獨特瓶身。
+                    </p>
+                    <p class="product-price">
+                        NT$4,980
+                    </p>
+
+                    <form class="row shoppingCart">
+                        <select class="col-6" id="addCart">
+                            <option selected>1</option>
+                            <option value="">其他</option>
+                        </select>
+                        <button class="col-6" type="button"  data-toggle="modal" data-target="#shoppingCart">
+                            加入購物車
+                        </button>
+                        <div class="modal fade" id="shoppingCart" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+                            <div class="modal-dialog modal-dialog-centered" role="document">
+                                <div class="modal-content">
+                                    <div class="modal-body">
+                                        <span class="text-primary text-center d-block">已加入購物車</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </form>
+                    <div class="heart-box">
+                        <a class="heart" href="#"data-toggle="modal" data-target="#heart">
+                            <img src="img/productlist/heart.svg" alt="heart">
+                        </a>
+                        <span>加入我的收藏</span>
+                        <!-- Modal -->
+                        <div class="modal fade" id="heart" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+                            <div class="modal-dialog modal-dialog-centered" role="document">
+                                <div class="modal-content">
+                                    <div class="modal-body">
+                                        <span class="text-primary text-center d-block">已加入我的收藏</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Button trigger modal -->
+                    
+                    <!--notice-->
+                    <div class="buy-notice">
+                        <h5>
+                            商品購買須知
+                        </h5>
+                        <p>
+                        產品因拍攝關係顏色可能略有差異，實際以廠商出貨為主。
+                        </p>
+                        <p>
+                            商品情境照為示意用，僅商品主體不包含其他配件，請以規格內容物為主。
+                        </p>
+                        <p>
+                            D’Perfume 盡可能確保所列商品備貨充足，但偶爾仍會有產品售罄的情況。如您所訂購的商品庫存不足，我們將盡快以電子郵件通知您。任何訂單變動均會在訂單總額與出貨訊息內更新。
+                        </p>
+                            
+                    </div>
+                    <div class="return-notice">
+                        <h5>
+                            退換貨須知
+                        </h5>
+                        <p>
+                            依《消費者保護法》的規定，於全站購物皆享有商品到貨【七日猶豫期】（含例假日）之權益。若收到的商品有任何問題，可於猶豫期內申請退貨。
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <!--footer-->
+    <div class="footer">
+        <div class="container">
+            <div class="row">
+                <div class="copyRight col-md-4">
+                    <a href="index.html">
+                        <img src="img/index/d’Perfumew.png" alt="logo">
+                    </a>
+                    <p><small>© 2020. All Rights Reserved.</small></small></p>
+                </div>
+                <ul class="col-md-3">
+                    <li><a href="productlist.html">Product</a></li>
+                    <li><a href="#">Blog</a></li>
+                    <li><a href="#">Contact</a></li>
+                </ul>
+            </div>
+        </div>
+    </div>
+
+
+
+
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js" integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV" crossorigin="anonymous"></script>
+
+
+<!-- AOS -->
+<link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+<script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+<script>
+    AOS.init({
+        // Global settings:
+        disable: false, // accepts following values: 'phone', 'tablet', 'mobile', boolean, expression or function
+        startEvent: 'DOMContentLoaded', // name of the event dispatched on the document, that AOS should initialize on
+        initClassName: 'aos-init', // class applied after initialization
+        animatedClassName: 'aos-animate', // class applied on animation
+        useClassNames: false, // if true, will add content of `data-aos` as classes on scroll
+        disableMutationObserver: false, // disables automatic mutations' detections (advanced)
+        debounceDelay: 50, // the delay on debounce used while resizing window (advanced)
+        throttleDelay: 99, // the delay on throttle used while scrolling the page (advanced)
+        
+
+        // Settings that can be overridden on per-element basis, by `data-aos-*` attributes:
+        offset: 50, // offset (in px) from the original trigger point
+        delay: 0, // values from 0 to 3000, with step 50ms
+        duration: 1000, // values from 0 to 3000, with step 50ms
+        easing: 'ease', // default easing for AOS animations
+        once: false, // whether animation should happen only once - while scrolling down
+        mirror: false, // whether elements should animate out while scrolling past them
+        anchorPlacement: 'top-bottom', // defines which position of the element regarding to window should trigger the animation
+
+    });
+</script>
+</body>
+</html>

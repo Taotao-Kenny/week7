@@ -1,0 +1,33 @@
+.subscribe{
+    background: url(../img/index/subscribe-1.png);
+    block-size: 100% 100%;
+
+    @include iphone{
+        background: url(../img/index/subscribe-2.png);
+    }
+
+    h2{
+        font-size: 32px;
+        color:#8D8D8D;
+        margin-top: 300px;
+        padding-bottom: 20px;
+    }
+
+    .mailBox{
+        border: 2px solid $primary;
+        border-radius:4px;
+        margin-bottom: 112px;
+
+        .mail{
+            border: none;
+            border-radius: 4px;
+        }
+
+        .btn{
+            border: none;
+            padding: 20px;
+            color: white;
+            
+        }
+    }
+}
